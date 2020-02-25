@@ -1,0 +1,15 @@
+## Get Auth User Information from laravel to javascript/vue
+#=============================================================
+##For getting this just use below code and then you will json object of data
+#=====================================================================
+
+
+@if(Auth::check())
+    <script>
+    	var authUserJS = @JSON(Auth::user());
+    </script>
+@endif
+
+
+
+#I hope it will help you......
